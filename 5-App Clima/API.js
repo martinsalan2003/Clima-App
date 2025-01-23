@@ -8,21 +8,46 @@ const iconePrincipal = document.querySelector("#icone-principal")
 
 if(dados.weather[0].description === 'ensolarado'){
     fundoImage.style.backgroundImage = 'url(./assets/images/ensolarado.jpg)'
+    iconePrincipal.classList.remove('bxs-leaf')
     iconePrincipal.classList.add('bx-sun')
 
 }if(dados.weather[0].description === 'nublado'){
     fundoImage.style.backgroundImage = 'url(./assets/images/nublado.jpg)'
+    iconePrincipal.classList.remove('bxs-leaf')
     iconePrincipal.classList.add('bx-cloud')
 
 }if(dados.weather[0].description === 'céu limpo'){
+    iconePrincipal.classList.remove('bxs-leaf')
     iconePrincipal.classList.add('bx-cloud')
     fundoImage.style.backgroundImage = 'url(./assets/images/ceulimpo.jpg)'
     
-}if(dados.weather[0].description === 'chuva forte'){
+}if(dados.weather[0].description === 'trovoadas'){
+    iconePrincipal.classList.remove('bxs-leaf')
+    iconePrincipal.classList.add('bx-cloud-lightning')
+    fundoImage.style.backgroundImage = 'url(./assets/images/chuvoso.jpg)'
+
+}if(dados.weather[0].description === 'nuvens dispersas'){
+    iconePrincipal.classList.remove('bxs-leaf')
+    iconePrincipal.classList.add('bx-cloud')
+    fundoImage.style.backgroundImage = 'url(./assets/images/nuvens.jpg)'
+
+}if(dados.weather[0].description === 'chuva leve'){
+    iconePrincipal.classList.remove('bxs-leaf')
     iconePrincipal.classList.add('bx-cloud-drizzle')
     fundoImage.style.backgroundImage = 'url(./assets/images/chuvoso.jpg)'
+
+}if(dados.weather[0].description === 'chuva moderada'){
+    iconePrincipal.classList.remove('bxs-leaf')
+    iconePrincipal.classList.add('bx-cloud-rain')
+    fundoImage.style.backgroundImage = 'url(./assets/images/chuvoso.jpg)'
+    
+}if(dados.weather[0].description === 'algumas nuvens'){
+    iconePrincipal.classList.remove('bxs-leaf')
+    iconePrincipal.classList.add('bx-cloud')
+    fundoImage.style.backgroundImage = 'url(./assets/images/nuvens.jpg)'
 }
 }
+
 
 
 
